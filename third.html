@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background:linear-gradient(135deg,rgb(74,13,143)0%,rgba(250,42,143)100%) ;
+         height: 200vh;
+        }
+        .main ul{
+            float: right;
+            list-style: none;
+            margin-top: 25px;
+        }
+        ul li{
+            display: inline-block;
+            
+            margin-right:40px ;
+        }
+        ul li a{
+            text-decoration: none;
+            color: rgba(255,255,255,0.5);
+            padding: 5px 0.2px;
+            transition: 0.5s ease;
+
+        }
+        ul li a:hover{
+            color:white ;
+            
+        }
+        ul li a.active{
+            /* border-bottom: 2px solid #cd99d4; */
+            color: #ffff;
+        }
+        ul li a.down{
+            border:1px solid #fff ;
+            padding: 2px 20px;
+            border-radius: 2px;
+            color: #fff;
+        }
+        ul li a.down:hover{
+            background:purple ;
+            color: black;
+        }
+        ul li a.active:hover{
+            background:pink;
+            color: purple;
+        }
+        .logo img{
+       float:left;
+       position: absolute;
+       top: 20px;
+        }
+        .main{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .tittle{
+            position: absolute;
+            top: 30%;
+            left: 56%;
+            transform:translate(-50%,-50%) ;
+
+        }
+        .tittle h1{
+            color: white;
+            font-size: 55px;
+            font-weight: 300;
+            letter-spacing:-1px ;
+
+        }
+        .tittle p{
+            color: #ffb8f6;
+            font-size: 18px;
+            text-align: center;
+        }
+        .image{
+            position: absolute;
+            top: 75%;
+            left:50% ;
+            transform: translate(-50%,-50%);
+            height: 0;
+            padding-bottom: 27%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <ul>
+                <li><a class="active" href="#">HOME</a></li>
+                <li><a class="active" href="#">ABOUT US</a></li>
+                <li><a class="active" href="#">FEATURES</a></li>
+                <li><a class="active" href="#">PRICING</a></li>
+                <li><a class="active" href="#">CONTACT</a></li>
+                <li><a class="down"  href="#">DOWNLOAD</a></li>
+            </ul>
+        </div>
+        <div class="tittle">
+            <h1>Mobile app landing page</h1><br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis aut rem repellat reprehenderit temporibus ducimus error ex commodi maiores.</p>
+        </div>
+        <div class="image">
+            <img src="./images/phoneimage.png" alt="" height="200px">
+        </div>
+    </header>
+    
+</body>
+</html>
